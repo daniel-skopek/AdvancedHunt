@@ -3,7 +3,6 @@ package de.theredend2000.advancedhunt.mysql.sqldata;
 import de.theredend2000.advancedhunt.Main;
 import de.theredend2000.advancedhunt.data.EggDataStorage;
 import de.theredend2000.advancedhunt.mysql.Database;
-import de.theredend2000.advancedhunt.util.ConfigLocationUtil;
 import de.theredend2000.advancedhunt.util.messages.MessageKey;
 import de.theredend2000.advancedhunt.util.messages.MessageManager;
 import net.md_5.bungee.api.ChatMessageType;

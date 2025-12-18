@@ -1,7 +1,6 @@
 package de.theredend2000.advancedhunt.util;
 
 import com.cryptomorin.xseries.XMaterial;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.inventory.ItemStack;
 
 public class XMaterialHelper {

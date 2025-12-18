@@ -16,15 +16,6 @@ commands:
   - "aeh"
   - "easter"
 
-#Auto download
-Download:
-  # Will be downloaded if a new plugin version is out
-  AdvancedHunt: true
-  # Will download for the plugin to work (This should not be disabled)
-  NBT-API: false
-#  ProtocolLib: false
-  PlaceholderAPI: false
-
 # Experimental feature toggles
 # Remove the '#' and set to true to use
 Experimental:

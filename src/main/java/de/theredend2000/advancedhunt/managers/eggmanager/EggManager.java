@@ -6,33 +6,27 @@ import de.theredend2000.advancedhunt.configurations.InventoryConfig;
 import de.theredend2000.advancedhunt.data.EggDataStorage;
 import de.theredend2000.advancedhunt.mysql.sqldata.EggManagerSQL;
 import de.theredend2000.advancedhunt.mysql.yamldata.EggManagerYAML;
-import de.theredend2000.advancedhunt.util.ConfigLocationUtil;
 import de.theredend2000.advancedhunt.util.ItemHelper;
 import de.theredend2000.advancedhunt.util.VersionComparator;
 import de.theredend2000.advancedhunt.util.XMaterialHelper;
 import de.theredend2000.advancedhunt.util.messages.MessageKey;
 import de.theredend2000.advancedhunt.util.messages.MessageManager;
-import de.tr7zw.nbtapi.NBT;
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.ArmorStand;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitTask;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
 public class EggManager {

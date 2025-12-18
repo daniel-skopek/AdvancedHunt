@@ -3,7 +3,6 @@ package de.theredend2000.advancedhunt.listeners;
 import de.theredend2000.advancedhunt.Main;
 import de.theredend2000.advancedhunt.managers.inventorymanager.HintMenu;
 import de.theredend2000.advancedhunt.managers.inventorymanager.common.IInventoryMenu;
-import de.theredend2000.advancedhunt.managers.inventorymanager.common.InventoryMenu;
 import de.theredend2000.advancedhunt.util.messages.MessageKey;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

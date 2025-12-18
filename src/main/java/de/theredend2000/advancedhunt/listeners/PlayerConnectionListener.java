@@ -10,8 +10,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import static de.theredend2000.advancedhunt.Main.getPlayerMenuUtility;
-
 public class PlayerConnectionListener implements Listener {
 
     public PlayerConnectionListener(){

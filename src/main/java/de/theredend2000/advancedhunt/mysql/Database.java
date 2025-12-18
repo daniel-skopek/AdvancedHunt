@@ -2,7 +2,6 @@ package de.theredend2000.advancedhunt.mysql;
 
 import de.theredend2000.advancedhunt.Main;
 import de.theredend2000.advancedhunt.configurations.MySQLConfig;
-import org.bukkit.Bukkit;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

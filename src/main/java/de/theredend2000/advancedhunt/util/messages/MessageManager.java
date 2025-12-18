@@ -3,7 +3,6 @@ package de.theredend2000.advancedhunt.util.messages;
 import de.theredend2000.advancedhunt.Main;
 import de.theredend2000.advancedhunt.configurations.MessageConfig;
 import de.theredend2000.advancedhunt.util.HexColor;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
 import java.util.ArrayList;

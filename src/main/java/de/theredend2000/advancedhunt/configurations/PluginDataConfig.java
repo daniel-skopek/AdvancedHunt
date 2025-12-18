@@ -3,7 +3,6 @@ package de.theredend2000.advancedhunt.configurations;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.nio.file.Paths;
 import java.util.TreeMap;
 
 public class PluginDataConfig extends Configuration {

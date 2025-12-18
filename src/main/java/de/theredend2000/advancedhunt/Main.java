@@ -99,8 +99,6 @@ public final class Main extends JavaPlugin {
             this.getLogger().warning("The plugin has not been tested on the current version.");
         }
 
-        setupAutoUpdating();
-
         if (!checkDependencies())
             return;
 
@@ -352,19 +350,6 @@ public final class Main extends JavaPlugin {
         new PlayerConnectionListener();
         new EntityChangeListener();
         new EntityDamageEventListener();
-    }
-
-    private void setupAutoUpdating() {
-        PluginDownloader downloader = new PluginDownloader(plugin);
-
-        if (plugin.getPluginConfig().getAutoDownloadAdvancedHunt())
-            downloader.downloadPlugin("109085", "AdvancedHunt", "spigot");
-        if (plugin.getPluginConfig().getAutoDownloadPlaceholderAPI())
-            downloader.downloadPlugin("6245", "PlaceholderAPI", "spigot");
-        if (plugin.getPluginConfig().getAutoDownloadProtocolLib())
-            downloader.downloadPlugin("1997", "ProtocolLib", "spigot");
-        if (plugin.getPluginConfig().getAutoDownloadNBTAPI())
-            downloader.downloadPlugin("nfGCP9fk", "NBTAPI", "modrinth");
     }
 
     private void giveAllItemsBack(){

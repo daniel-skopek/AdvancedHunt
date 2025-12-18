@@ -4,7 +4,6 @@ import de.theredend2000.advancedhunt.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-import java.nio.Buffer;
 import java.util.UUID;
 
 public class LogHelper {
