@@ -141,7 +141,7 @@ public class PlayerInteractEventListener implements Listener {
                             boolean startsWithGive = cmd.toLowerCase().startsWith("give") || cmd.toLowerCase().startsWith("minecraft:give");
                             boolean sendRarityMessage = Main.getInstance().getPluginConfig().sendRarityMessage();
 
-                            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replaceAll("%PLAYER%", player.getName()).replaceAll("&", "§").replaceAll("%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection))).replaceAll("%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection))).replaceAll("%PREFIX%", Main.PREFIX));
+                            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replaceAll("(?i)%PLAYER%", player.getName()).replaceAll("&", "§").replaceAll("(?i)%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection))).replaceAll("(?i)%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection))).replaceAll("(?i)%PREFIX%", Main.PREFIX));
 
                             if(sendRarityMessage && (startsWithGive || displayName != null)) {
                                 if (!(displayName == null || displayName.isBlank())) {
@@ -156,10 +156,10 @@ public class PlayerInteractEventListener implements Listener {
                         String message = placedEggs.getString(messagePath);
 
                         if (placedEggs.contains(messagePath) && message != null) {
-                            String finalMessage = message.replaceAll("%PLAYER%", player.getName())
-                                    .replaceAll("%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection)))
-                                    .replaceAll("%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection)))
-                                    .replaceAll("%PREFIX%", Main.PREFIX)
+                            String finalMessage = message.replaceAll("(?i)%PLAYER%", player.getName())
+                                    .replaceAll("(?i)%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection)))
+                                    .replaceAll("(?i)%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection)))
+                                    .replaceAll("(?i)%PREFIX%", Main.PREFIX)
                                     .replaceAll("&", "§");
                             player.sendMessage(HexColor.color(finalMessage));
                         }
@@ -186,7 +186,7 @@ public class PlayerInteractEventListener implements Listener {
                                 boolean startsWithGive = cmd.toLowerCase().startsWith("give") || cmd.toLowerCase().startsWith("minecraft:give");
                                 boolean sendRarityMessage = Main.getInstance().getPluginConfig().sendRarityMessage();
 
-                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replaceAll("%PLAYER%", player.getName()).replaceAll("&", "§").replaceAll("%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection))).replaceAll("%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection))).replaceAll("%PREFIX%", Main.PREFIX));
+                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replaceAll("(?i)%PLAYER%", player.getName()).replaceAll("&", "§").replaceAll("(?i)%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection))).replaceAll("(?i)%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection))).replaceAll("(?i)%PREFIX%", Main.PREFIX));
 
                                 if(sendRarityMessage && (startsWithGive || displayName != null)) {
                                     if (!(displayName == null || displayName.isBlank())) {
@@ -201,10 +201,10 @@ public class PlayerInteractEventListener implements Listener {
                             String message = placedEggs.getString(messagePath);
 
                             if (placedEggs.contains(messagePath) && message != null) {
-                                String finalMessage = message.replaceAll("%PLAYER%", player.getName())
-                                        .replaceAll("%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection)))
-                                        .replaceAll("%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection)))
-                                        .replaceAll("%PREFIX%", Main.PREFIX)
+                                String finalMessage = message.replaceAll("(?i)%PLAYER%", player.getName())
+                                        .replaceAll("(?i)%TREASURES_FOUND%", String.valueOf(eggManager.getEggsFound(player.getUniqueId(), collection)))
+                                        .replaceAll("(?i)%TREASURES_MAX%", String.valueOf(eggManager.getMaxEggs(collection)))
+                                        .replaceAll("(?i)%PREFIX%", Main.PREFIX)
                                         .replaceAll("&", "§");
                                 player.sendMessage(HexColor.color(finalMessage));
                             }
